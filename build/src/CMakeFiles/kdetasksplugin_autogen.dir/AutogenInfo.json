@@ -1,7 +1,7 @@
 {
-	"BUILD_DIR" : "/home/mohnish/github/KDE-Tasks/src/kdetasksplugin_autogen",
-	"CMAKE_BINARY_DIR" : "/home/mohnish/github/KDE-Tasks",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/mohnish/github/KDE-Tasks/src",
+	"BUILD_DIR" : "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen",
+	"CMAKE_BINARY_DIR" : "/home/mohnish/github/KDE-Tasks/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/mohnish/github/KDE-Tasks/build/src",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/mohnish/github/KDE-Tasks/src",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
@@ -13,7 +13,7 @@
 	],
 	"CMAKE_SOURCE_DIR" : "/home/mohnish/github/KDE-Tasks",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/home/mohnish/github/KDE-Tasks/src/kdetasksplugin_autogen/deps",
+	"DEP_FILE" : "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "kdetasksplugin_autogen/timestamp",
 	"HEADERS" : 
 	[
@@ -43,8 +43,8 @@
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/mohnish/github/KDE-Tasks/src/kdetasksplugin_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/mohnish/github/KDE-Tasks/src/kdetasksplugin_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -79,6 +79,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/mohnish/github/KDE-Tasks/build/src",
 		"/home/mohnish/github/KDE-Tasks/src",
 		"/usr/include/qt6/QtQml",
 		"/usr/include/qt6",
@@ -124,21 +125,21 @@
 		"-E",
 		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/mohnish/github/KDE-Tasks/src/kdetasksplugin_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/mohnish/github/KDE-Tasks/src/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp",
-		"/home/mohnish/github/KDE-Tasks/src/kdetasksplugin_qmltyperegistrations.cpp"
+		"/home/mohnish/github/KDE-Tasks/build/src/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp",
+		"/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 10,
-	"PARSE_CACHE_FILE" : "/home/mohnish/github/KDE-Tasks/src/CMakeFiles/kdetasksplugin_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/mohnish/github/KDE-Tasks/build/src/CMakeFiles/kdetasksplugin_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 10,
-	"SETTINGS_FILE" : "/home/mohnish/github/KDE-Tasks/src/CMakeFiles/kdetasksplugin_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/mohnish/github/KDE-Tasks/build/src/CMakeFiles/kdetasksplugin_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[ "/home/mohnish/github/KDE-Tasks/src/networkmanager.cpp", "Mu", null ],

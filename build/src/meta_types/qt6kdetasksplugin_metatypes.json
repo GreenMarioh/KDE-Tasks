@@ -1,0 +1,142 @@
+[
+    {
+        "classes": [
+            {
+                "className": "NetworkManager",
+                "lineNumber": 10,
+                "object": true,
+                "qualifiedClassName": "NetworkManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "tasks",
+                                "type": "std::vector<TaskItem>"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 22,
+                        "name": "tasksFetched",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 23,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "reply",
+                                "type": "QNetworkReply*"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 26,
+                        "name": "onTasksReceived",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "networkmanager.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TasksModel",
+                "lineNumber": 13,
+                "object": true,
+                "qualifiedClassName": "TasksModel",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "taskmodel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TasksPlugin",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "TasksPlugin",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQmlExtensionPlugin"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "taskplugin.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TasksController",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 21,
+                        "name": "refreshTasks",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 13,
+                        "name": "tasksModel",
+                        "read": "tasksModel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "TasksModel*",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TasksController",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "taskscontroller.h",
+        "outputRevision": 69
+    }
+]

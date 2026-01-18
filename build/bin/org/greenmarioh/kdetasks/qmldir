@@ -1,0 +1,8 @@
+module org.greenmarioh.kdetasks
+linktarget kdetasksplugin
+plugin kdetasksplugin
+classname org_greenmarioh_kdetasksPlugin
+typeinfo kdetasksplugin.qmltypes
+prefer :/qt/qml/org/greenmarioh/kdetasks/
+depends QtQuick
+

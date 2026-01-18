@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "TasksModel",
+            "lineNumber": 13,
+            "object": true,
+            "qualifiedClassName": "TasksModel",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "taskmodel.h",
+    "outputRevision": 69
+}

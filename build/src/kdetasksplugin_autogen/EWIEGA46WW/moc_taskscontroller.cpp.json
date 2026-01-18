@@ -1,0 +1,43 @@
+{
+    "classes": [
+        {
+            "className": "TasksController",
+            "lineNumber": 9,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 21,
+                    "name": "refreshTasks",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "lineNumber": 13,
+                    "name": "tasksModel",
+                    "read": "tasksModel",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "TasksModel*",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "TasksController",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "taskscontroller.h",
+    "outputRevision": 69
+}

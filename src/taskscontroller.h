@@ -4,7 +4,7 @@
 #include <QObject>
 #include "taskmodel.h"
 #include "networkmanager.h"
-#include <KWallet/Wallet> 
+#include <KWallet>
 
 class TasksController : public QObject
 {
@@ -19,6 +19,7 @@ public:
 
     // QML-accessible method to trigger a refresh
     Q_INVOKABLE void refreshTasks();
+    void authenticate();
 
 private:
     void loadCredentialsFromWallet();
