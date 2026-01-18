@@ -1,4 +1,4 @@
-#include "tasksmodel.h"
+#include "taskmodel.h"
 
 TasksModel::TasksModel(QObject *parent) : QAbstractListModel(parent) {}
 

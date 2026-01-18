@@ -1,22 +1,14 @@
 {
+    "KPackageStructure": "Plasma/Applet",
     "KPlugin": {
         "Authors": [
-            {
-                "Email": " ",
-                "Name": "GreenMarioh"
-            }
+            { "Name": "GreenMarioh" }
         ],
-        "Description": "Google Tasks integration for KDE",
-        "Icon": "task-accepted",
         "Id": "org.greenmarioh.kdetasks",
         "Name": "KDE Tasks",
-        "ServiceTypes": [
-            "Plasma/Applet"
-        ],
-        "Version": "0.1",
-        "Website": "https://github.com/GreenMarioh/kde-tasks"
+        "Icon": "task-accepted",
+        "Description": "Google Tasks integration for KDE",
+        "Version": "0.1"
     },
-    "KPackageStructure": "Plasma/Applet",
-    "X-Plasma-API": "declarativeappletscript",
-    "X-Plasma-MainScript": "ui/main.qml"
+    "X-Plasma-API-Minimum-Version": "6.0"
 }

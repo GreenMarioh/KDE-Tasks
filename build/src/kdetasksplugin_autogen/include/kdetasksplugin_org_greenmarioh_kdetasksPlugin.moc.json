@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "org_greenmarioh_kdetasksPlugin",
+            "lineNumber": 11,
+            "object": true,
+            "qualifiedClassName": "org_greenmarioh_kdetasksPlugin",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQmlEngineExtensionPlugin"
+                }
+            ]
+        }
+    ],
+    "inputFile": "kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp",
+    "outputRevision": 69
+}

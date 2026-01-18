@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/mohnish/github/KDE-Tasks/build/cmake_install.cmake",
+		"/home/mohnish/github/KDE-Tasks/build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -11,10 +11,11 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_MODULE_PATH})
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
+include(ECMQmlModule)  # <--- Add this line
 include(ECMQtDeclareLoggingCategory)
 include(ECMSetupVersion)
 
-find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Quick Network)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Quick Network NetworkAuth)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 find_package(Plasma REQUIRED)
 
