@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "TasksPlugin",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "TasksPlugin",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQmlExtensionPlugin"
+                }
+            ]
+        }
+    ],
+    "inputFile": "taskplugin.h",
+    "outputRevision": 69
+}

@@ -1,6 +1,6 @@
 module org.greenmarioh.kdetasks
 linktarget kdetasksplugin
-optional plugin kdetasksplugin
+plugin kdetasksplugin
 classname org_greenmarioh_kdetasksPlugin
 typeinfo kdetasksplugin.qmltypes
 prefer :/qt/qml/org/greenmarioh/kdetasks/

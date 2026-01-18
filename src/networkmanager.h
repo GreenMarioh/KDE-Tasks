@@ -4,9 +4,7 @@
 #include <QObject>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
-#include <QJsonDocument>
-#include <QJsonArray>
-#include <QJsonObject>
+#include <QString>
 #include "taskmodel.h"
 
 class NetworkManager : public QObject
@@ -16,18 +14,15 @@ class NetworkManager : public QObject
 public:
     explicit NetworkManager(QObject *parent = nullptr);
 
-    // Call this with your OAuth2 access token
     void setAccessToken(const QString &token);
-    
-    // API Methods
-    void fetchTasks(const QString &listId = "@default");
+    void fetchTasks(const QString &listId = QStringLiteral("@default"));
     void updateTaskStatus(const QString &listId, const QString &taskId, bool completed);
 
-signals:
+Q_SIGNALS:
     void tasksFetched(const std::vector<TaskItem> &tasks);
     void errorOccurred(const QString &error);
 
-private slots:
+private Q_SLOTS:
     void onTasksReceived(QNetworkReply *reply);
 
 private:

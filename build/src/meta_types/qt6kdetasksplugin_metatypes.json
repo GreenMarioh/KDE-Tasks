@@ -3,9 +3,52 @@
         "classes": [
             {
                 "className": "NetworkManager",
-                "lineNumber": 12,
+                "lineNumber": 10,
                 "object": true,
                 "qualifiedClassName": "NetworkManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "tasks",
+                                "type": "std::vector<TaskItem>"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 22,
+                        "name": "tasksFetched",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 23,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "reply",
+                                "type": "QNetworkReply*"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 26,
+                        "name": "onTasksReceived",
+                        "returnType": "void"
+                    }
+                ],
                 "superClasses": [
                     {
                         "access": "public",
@@ -33,6 +76,24 @@
             }
         ],
         "inputFile": "taskmodel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TasksPlugin",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "TasksPlugin",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQmlExtensionPlugin"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "taskplugin.h",
         "outputRevision": 69
     },
     {
@@ -76,24 +137,6 @@
             }
         ],
         "inputFile": "taskscontroller.h",
-        "outputRevision": 69
-    },
-    {
-        "classes": [
-            {
-                "className": "org_greenmarioh_kdetasksPlugin",
-                "lineNumber": 11,
-                "object": true,
-                "qualifiedClassName": "org_greenmarioh_kdetasksPlugin",
-                "superClasses": [
-                    {
-                        "access": "public",
-                        "name": "QQmlEngineExtensionPlugin"
-                    }
-                ]
-            }
-        ],
-        "inputFile": "kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp",
         "outputRevision": 69
     }
 ]

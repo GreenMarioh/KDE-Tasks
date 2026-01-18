@@ -11,6 +11,7 @@
  /home/mohnish/github/KDE-Tasks/src/taskmodel.cpp
  /home/mohnish/github/KDE-Tasks/src/taskmodel.h
  /home/mohnish/github/KDE-Tasks/src/taskplugin.cpp
+ /home/mohnish/github/KDE-Tasks/src/taskplugin.h
  /home/mohnish/github/KDE-Tasks/src/taskscontroller.cpp
  /home/mohnish/github/KDE-Tasks/src/taskscontroller.h
  /usr/bin/cmake
@@ -459,6 +460,7 @@
  /usr/include/qt6/QtNetwork/qtnetwork-config.h
  /usr/include/qt6/QtNetwork/qtnetworkexports.h
  /usr/include/qt6/QtNetwork/qtnetworkglobal.h
+ /usr/include/qt6/QtQml/QQmlExtensionPlugin
  /usr/include/qt6/QtQml/qqmlextensioninterface.h
  /usr/include/qt6/QtQml/qqmlextensionplugin.h
  /usr/include/qt6/QtQml/qtqml-config.h

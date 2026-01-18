@@ -10,8 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o.d"
   "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o.d"
-  "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o"
-  "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o.d"
   "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o"
   "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o.d"
   "CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o"

@@ -8,7 +8,7 @@ int TasksModel::rowCount(const QModelIndex &parent) const {
 }
 
 QVariant TasksModel::data(const QModelIndex &index, int role) const {
-    if (!index.isValid() || index.row() >= m_tasks.size())
+    if (!index.isValid() || index.row() >= static_cast<int>(m_tasks.size()))
         return QVariant();
 
     const TaskItem &item = m_tasks[index.row()];
@@ -23,9 +23,8 @@ bool TasksModel::setData(const QModelIndex &index, const QVariant &value, int ro
     if (!index.isValid() || role != CompletedRole) return false;
 
     m_tasks[index.row()].completed = value.toBool();
-    emit dataChanged(index, index, {role});
+    Q_EMIT dataChanged(index, index, QList<int>({role}));
     
-    // TODO: Trigger a Network Request here to update Google Tasks API
     return true;
 }
 

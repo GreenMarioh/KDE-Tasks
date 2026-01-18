@@ -1,12 +1,11 @@
-src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o: \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/mocs_compilation.cpp \
- /usr/include/stdc-predef.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_networkmanager.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/networkmanager.h \
- /usr/include/qt6/QtCore/QObject /usr/include/qt6/QtCore/qobject.h \
- /usr/include/qt6/QtCore/qobjectdefs.h \
- /usr/include/qt6/QtCore/qnamespace.h /usr/include/qt6/QtCore/qglobal.h \
- /usr/include/c++/15.2.1/type_traits \
+src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o: \
+ /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp \
+ /usr/include/stdc-predef.h /usr/include/qt6/QtCore/qtsymbolmacros.h \
+ /usr/include/qt6/QtCore/qcompilerdetection.h \
+ /usr/include/qt6/QtCore/qprocessordetection.h \
+ /usr/include/qt6/QtCore/qsystemdetection.h \
+ /usr/include/qt6/QtCore/qtconfiginclude.h \
+ /usr/include/c++/15.2.1/version /usr/include/c++/15.2.1/bits/version.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -15,14 +14,21 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/15.2.1/pstl/pstl_config.h \
- /usr/include/c++/15.2.1/bits/version.h /usr/include/c++/15.2.1/cstddef \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
- /usr/include/c++/15.2.1/utility \
+ /usr/include/qt6/QtCore/qconfig.h \
+ /usr/include/qt6/QtCore/qtcore-config.h /usr/include/c++/15.2.1/utility \
  /usr/include/c++/15.2.1/bits/stl_relops.h \
  /usr/include/c++/15.2.1/bits/stl_pair.h \
- /usr/include/c++/15.2.1/bits/move.h \
+ /usr/include/c++/15.2.1/type_traits /usr/include/c++/15.2.1/bits/move.h \
  /usr/include/c++/15.2.1/bits/utility.h \
- /usr/include/c++/15.2.1/initializer_list /usr/include/c++/15.2.1/cstdint \
+ /usr/include/c++/15.2.1/initializer_list \
+ /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
+ /usr/include/qt6/QtQml/qqmlextensionplugin.h \
+ /usr/include/qt6/QtCore/qplugin.h /usr/include/qt6/QtCore/qobject.h \
+ /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qnamespace.h /usr/include/qt6/QtCore/qglobal.h \
+ /usr/include/c++/15.2.1/cstddef \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+ /usr/include/c++/15.2.1/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
@@ -32,18 +38,11 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
  /usr/include/qt6/QtCore/qtcoreglobal.h \
  /usr/include/qt6/QtCore/qtversionchecks.h \
- /usr/include/qt6/QtCore/qtconfiginclude.h \
- /usr/include/c++/15.2.1/version /usr/include/qt6/QtCore/qconfig.h \
- /usr/include/qt6/QtCore/qtcore-config.h \
  /usr/include/qt6/QtCore/qtconfigmacros.h \
  /usr/include/qt6/QtCore/qtdeprecationdefinitions.h \
- /usr/include/qt6/QtCore/qcompilerdetection.h \
- /usr/include/qt6/QtCore/qprocessordetection.h \
- /usr/include/qt6/QtCore/qsystemdetection.h \
  /usr/include/qt6/QtCore/qtcoreexports.h \
  /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
  /usr/include/qt6/QtCore/qtclasshelpermacros.h \
- /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
  /usr/include/qt6/QtCore/qassert.h /usr/include/qt6/QtCore/qtnoop.h \
  /usr/include/qt6/QtCore/qtypes.h /usr/include/qt6/QtCore/qtversion.h \
  /usr/include/qt6/QtCore/qtypeinfo.h \
@@ -299,14 +298,14 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/include/qt6/QtCore/qobject_impl.h \
  /usr/include/qt6/QtCore/qbindingstorage.h /usr/include/c++/15.2.1/chrono \
  /usr/include/c++/15.2.1/bits/chrono.h /usr/include/c++/15.2.1/ratio \
- /usr/include/c++/15.2.1/ctime \
- /usr/include/qt6/QtNetwork/QNetworkAccessManager \
- /usr/include/qt6/QtNetwork/qnetworkaccessmanager.h \
- /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
- /usr/include/qt6/QtNetwork/qtnetwork-config.h \
- /usr/include/qt6/QtNetwork/qtnetworkexports.h \
- /usr/include/qt6/QtNetwork/qnetworkrequest.h \
- /usr/include/qt6/QtNetwork/qhttpheaders.h \
+ /usr/include/c++/15.2.1/ctime /usr/include/qt6/QtCore/qpointer.h \
+ /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/qt6/QtCore/qsharedpointer_impl.h \
+ /usr/include/qt6/QtCore/qjsonobject.h \
+ /usr/include/qt6/QtCore/qjsonvalue.h \
+ /usr/include/qt6/QtCore/qcborvalue.h \
+ /usr/include/qt6/QtCore/qcborcommon.h \
  /usr/include/qt6/QtCore/qdatetime.h /usr/include/qt6/QtCore/qcalendar.h \
  /usr/include/qt6/QtCore/qlocale.h /usr/include/qt6/QtCore/qvariant.h \
  /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qtextstream.h \
@@ -317,10 +316,8 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/qt6/QtCore/qsharedpointer.h \
- /usr/include/qt6/QtCore/qshareddata.h \
- /usr/include/qt6/QtCore/qsharedpointer_impl.h \
- /usr/include/c++/15.2.1/set /usr/include/c++/15.2.1/bits/stl_set.h \
+ /usr/include/bits/uio_lim.h /usr/include/c++/15.2.1/set \
+ /usr/include/c++/15.2.1/bits/stl_set.h \
  /usr/include/c++/15.2.1/bits/stl_multiset.h \
  /usr/include/c++/15.2.1/unordered_set \
  /usr/include/c++/15.2.1/bits/unordered_set.h \
@@ -329,66 +326,21 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/include/qt6/QtCore/qset.h /usr/include/qt6/QtCore/qhash.h \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtCore/q23utility.h \
- /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/qobject.h \
- /usr/include/qt6/QtCore/qmetaobject.h \
- /usr/include/qt6/QtCore/QSharedDataPointer \
- /usr/include/qt6/QtCore/qshareddata.h /usr/include/qt6/QtCore/QString \
- /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/QUrl \
- /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtCore/QVariant \
- /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/q26numeric.h \
- /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/qlist.h \
- /usr/include/qt6/QtCore/QObject \
- /usr/include/qt6/QtNetwork/QSslConfiguration \
- /usr/include/qt6/QtNetwork/qsslconfiguration.h \
- /usr/include/qt6/QtNetwork/qsslsocket.h \
- /usr/include/qt6/QtNetwork/qtcpsocket.h \
- /usr/include/qt6/QtNetwork/qabstractsocket.h \
- /usr/include/qt6/QtCore/qiodevice.h /usr/include/qt6/QtCore/qspan.h \
- /usr/include/c++/15.2.1/cassert /usr/include/qt6/QtCore/q20iterator.h \
- /usr/include/qt6/QtNetwork/qhostaddress.h \
- /usr/include/qt6/QtNetwork/qsslerror.h \
- /usr/include/qt6/QtNetwork/qsslcertificate.h \
- /usr/include/qt6/QtCore/qcryptographichash.h \
- /usr/include/qt6/QtNetwork/qssl.h /usr/include/qt6/QtCore/QFlags \
- /usr/include/qt6/QtCore/qflags.h \
- /usr/include/qt6/QtNetwork/QSslPreSharedKeyAuthenticator \
- /usr/include/qt6/QtNetwork/qsslpresharedkeyauthenticator.h \
- /usr/include/qt6/QtCore/QMetaType /usr/include/qt6/QtCore/qmetatype.h \
- /usr/include/qt6/QtNetwork/QNetworkReply \
- /usr/include/qt6/QtNetwork/qnetworkreply.h \
- /usr/include/qt6/QtCore/QIODevice /usr/include/qt6/QtCore/qiodevice.h \
- /usr/include/qt6/QtNetwork/QNetworkRequest \
- /usr/include/qt6/QtNetwork/qnetworkrequest.h \
- /usr/include/qt6/QtNetwork/QNetworkAccessManager \
- /usr/include/qt6/QtCore/QString \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskmodel.h \
- /usr/include/qt6/QtCore/QAbstractListModel \
- /usr/include/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/qt6/QtNetwork/QSslError \
- /usr/include/qt6/QtNetwork/qsslerror.h \
- /usr/include/qt6/QtCore/qtmochelpers.h \
- /usr/include/qt6/QtCore/qtmocconstants.h \
- /usr/include/qt6/QtCore/q20algorithm.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskmodel.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskmodel.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskplugin.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskplugin.h \
- /usr/include/qt6/QtQml/QQmlExtensionPlugin \
- /usr/include/qt6/QtQml/qqmlextensionplugin.h \
- /usr/include/qt6/QtCore/qplugin.h /usr/include/qt6/QtCore/qpointer.h \
- /usr/include/qt6/QtCore/qjsonobject.h \
- /usr/include/qt6/QtCore/qjsonvalue.h \
- /usr/include/qt6/QtCore/qcborvalue.h \
- /usr/include/qt6/QtCore/qcborcommon.h \
+ /usr/include/qt6/QtCore/q20utility.h \
  /usr/include/qt6/QtCore/qregularexpression.h \
  /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtCore/quuid.h \
  /usr/include/qt6/QtCore/qendian.h \
  /usr/include/qt6/QtCore/qjsondocument.h \
  /usr/include/qt6/QtCore/qjsonparseerror.h \
+ /usr/include/qt6/QtCore/q20algorithm.h /usr/include/qt6/QtCore/QUrl \
+ /usr/include/qt6/QtCore/qurl.h \
  /usr/include/qt6/QtQml/qqmlextensioninterface.h \
  /usr/include/qt6/QtQml/qtqmlglobal.h \
  /usr/include/qt6/QtQml/qtqml-config.h \
+ /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
+ /usr/include/qt6/QtNetwork/qtnetwork-config.h \
+ /usr/include/qt6/QtNetwork/qtnetworkexports.h \
  /usr/include/qt6/QtQml/qtqmlexports.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskscontroller.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskscontroller.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/networkmanager.h
+ /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/include/kdetasksplugin_org_greenmarioh_kdetasksPlugin.moc \
+ /usr/include/qt6/QtCore/qtmochelpers.h \
+ /usr/include/qt6/QtCore/qtmocconstants.h

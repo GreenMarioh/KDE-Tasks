@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "src/kdetasksplugin_autogen/timestamp" "custom" "src/kdetasksplugin_autogen/deps"
   "/home/mohnish/github/KDE-Tasks/build/src/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp" "src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o" "gcc" "src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o.d"
   "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/mocs_compilation.cpp" "src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o.d"
-  "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp" "src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o" "gcc" "src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o.d"
   "/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_qmltyperegistrations.cpp" "src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o" "gcc" "src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o.d"
   "/home/mohnish/github/KDE-Tasks/src/networkmanager.cpp" "src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o" "gcc" "src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o.d"
   "/home/mohnish/github/KDE-Tasks/src/taskmodel.cpp" "src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o" "gcc" "src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o.d"

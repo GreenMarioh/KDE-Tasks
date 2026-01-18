@@ -66,12 +66,9 @@ include src/CMakeFiles/kdetasksplugin_autogen_timestamp_deps.dir/compiler_depend
 # Include the progress variables for this target.
 include src/CMakeFiles/kdetasksplugin_autogen_timestamp_deps.dir/progress.make
 
-src/CMakeFiles/kdetasksplugin_autogen_timestamp_deps: src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp
-
 src/CMakeFiles/kdetasksplugin_autogen_timestamp_deps.dir/codegen:
 .PHONY : src/CMakeFiles/kdetasksplugin_autogen_timestamp_deps.dir/codegen
 
-kdetasksplugin_autogen_timestamp_deps: src/CMakeFiles/kdetasksplugin_autogen_timestamp_deps
 kdetasksplugin_autogen_timestamp_deps: src/CMakeFiles/kdetasksplugin_autogen_timestamp_deps.dir/build.make
 .PHONY : kdetasksplugin_autogen_timestamp_deps
 

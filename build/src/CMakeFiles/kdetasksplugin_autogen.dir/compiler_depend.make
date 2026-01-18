@@ -10,6 +10,7 @@ src/kdetasksplugin_autogen/timestamp: src/kdetasksplugin_autogen/moc_predefs.h \
   /home/mohnish/github/KDE-Tasks/src/taskmodel.cpp \
   /home/mohnish/github/KDE-Tasks/src/taskmodel.h \
   /home/mohnish/github/KDE-Tasks/src/taskplugin.cpp \
+  /home/mohnish/github/KDE-Tasks/src/taskplugin.h \
   /home/mohnish/github/KDE-Tasks/src/taskscontroller.cpp \
   /home/mohnish/github/KDE-Tasks/src/taskscontroller.h \
   /usr/bin/cmake \
@@ -458,6 +459,7 @@ src/kdetasksplugin_autogen/timestamp: src/kdetasksplugin_autogen/moc_predefs.h \
   /usr/include/qt6/QtNetwork/qtnetwork-config.h \
   /usr/include/qt6/QtNetwork/qtnetworkexports.h \
   /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
+  /usr/include/qt6/QtQml/QQmlExtensionPlugin \
   /usr/include/qt6/QtQml/qqmlextensioninterface.h \
   /usr/include/qt6/QtQml/qqmlextensionplugin.h \
   /usr/include/qt6/QtQml/qtqml-config.h \
@@ -626,8 +628,6 @@ src/kdetasksplugin_autogen/timestamp: src/kdetasksplugin_autogen/moc_predefs.h \
 /usr/include/qt6/QtCore/qiterator.h:
 
 /usr/include/qt6/QtCore/qhash.h:
-
-/usr/include/qt6/QtCore/qglobalstatic.h:
 
 /usr/include/qt6/QtCore/qglobal.h:
 
@@ -989,13 +989,17 @@ src/kdetasksplugin_autogen/timestamp: src/kdetasksplugin_autogen/moc_predefs.h \
 
 /usr/include/asm/posix_types.h:
 
-/usr/include/qt6/QtCore/qtconfiginclude.h:
+/usr/include/bits/types/struct_FILE.h:
 
-/usr/include/qt6/QtCore/qatomic.h:
+/usr/include/qt6/QtNetwork/QNetworkAccessManager:
 
-/usr/include/limits.h:
+/usr/include/asm/types.h:
 
-src/kdetasksplugin_autogen/moc_predefs.h:
+/usr/include/c++/15.2.1/bits/locale_classes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdint-least.h:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
@@ -1013,7 +1017,19 @@ src/kdetasksplugin_autogen/moc_predefs.h:
 
 /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc:
 
+/usr/include/qt6/QtCore/qtconfiginclude.h:
+
+/usr/include/qt6/QtCore/qatomic.h:
+
+/usr/include/limits.h:
+
+src/kdetasksplugin_autogen/moc_predefs.h:
+
 /home/mohnish/github/KDE-Tasks/src/networkmanager.cpp:
+
+/usr/include/qt6/QtCore/qglobalstatic.h:
+
+/home/mohnish/github/KDE-Tasks/src/taskplugin.h:
 
 /home/mohnish/github/KDE-Tasks/src/networkmanager.h:
 
@@ -1069,18 +1085,6 @@ src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp:
 
 /usr/include/bits/setjmp.h:
 
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/qt6/QtNetwork/QNetworkAccessManager:
-
-/usr/include/asm/types.h:
-
-/usr/include/c++/15.2.1/bits/locale_classes.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/stdint-least.h:
-
 /usr/include/bits/endianness.h:
 
 /usr/include/bits/xopen_lim.h:
@@ -1102,6 +1106,8 @@ src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp:
 /usr/include/bits/libc-header-start.h:
 
 /usr/include/bits/long-double.h:
+
+/usr/include/qt6/QtQml/QQmlExtensionPlugin:
 
 /usr/include/qt6/QtCore/qstringconverter_base.h:
 

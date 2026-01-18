@@ -415,30 +415,6 @@ kdetasksplugin_autogen/mocs_compilation.cpp.s:
 	cd /home/mohnish/github/KDE-Tasks/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/kdetasksplugin.dir/build.make src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.s
 .PHONY : kdetasksplugin_autogen/mocs_compilation.cpp.s
 
-kdetasksplugin_org_greenmarioh_kdetasksPlugin.o: kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o
-.PHONY : kdetasksplugin_org_greenmarioh_kdetasksPlugin.o
-
-# target to build an object file
-kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o:
-	cd /home/mohnish/github/KDE-Tasks/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/kdetasksplugin.dir/build.make src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o
-.PHONY : kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o
-
-kdetasksplugin_org_greenmarioh_kdetasksPlugin.i: kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.i
-.PHONY : kdetasksplugin_org_greenmarioh_kdetasksPlugin.i
-
-# target to preprocess a source file
-kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.i:
-	cd /home/mohnish/github/KDE-Tasks/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/kdetasksplugin.dir/build.make src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.i
-.PHONY : kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.i
-
-kdetasksplugin_org_greenmarioh_kdetasksPlugin.s: kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.s
-.PHONY : kdetasksplugin_org_greenmarioh_kdetasksPlugin.s
-
-# target to generate assembly for a file
-kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.s:
-	cd /home/mohnish/github/KDE-Tasks/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/kdetasksplugin.dir/build.make src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.s
-.PHONY : kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.s
-
 kdetasksplugin_qmltyperegistrations.o: kdetasksplugin_qmltyperegistrations.cpp.o
 .PHONY : kdetasksplugin_qmltyperegistrations.o
 
@@ -592,9 +568,6 @@ help:
 	@echo "... kdetasksplugin_autogen/mocs_compilation.o"
 	@echo "... kdetasksplugin_autogen/mocs_compilation.i"
 	@echo "... kdetasksplugin_autogen/mocs_compilation.s"
-	@echo "... kdetasksplugin_org_greenmarioh_kdetasksPlugin.o"
-	@echo "... kdetasksplugin_org_greenmarioh_kdetasksPlugin.i"
-	@echo "... kdetasksplugin_org_greenmarioh_kdetasksPlugin.s"
 	@echo "... kdetasksplugin_qmltyperegistrations.o"
 	@echo "... kdetasksplugin_qmltyperegistrations.i"
 	@echo "... kdetasksplugin_qmltyperegistrations.s"

@@ -7,12 +7,9 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/mohnish/github/KDE-Tasks/src/CMakeLists.txt",
-		"/usr/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in",
 		"/usr/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"/usr/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in",
 		"/usr/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
-		"/usr/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
-		"/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_org_greenmarioh_kdetasksPlugin_in.cpp"
+		"/usr/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/mohnish/github/KDE-Tasks",
 	"CROSS_CONFIG" : false,
@@ -30,6 +27,12 @@
 			"/home/mohnish/github/KDE-Tasks/src/taskmodel.h",
 			"Mu",
 			"EWIEGA46WW/moc_taskmodel.cpp",
+			null
+		],
+		[
+			"/home/mohnish/github/KDE-Tasks/src/taskplugin.h",
+			"Mu",
+			"EWIEGA46WW/moc_taskplugin.cpp",
 			null
 		],
 		[
@@ -138,11 +141,6 @@
 	"SETTINGS_FILE" : "/home/mohnish/github/KDE-Tasks/build/src/CMakeFiles/kdetasksplugin_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp",
-			"Mu",
-			null
-		],
 		[ "/home/mohnish/github/KDE-Tasks/src/networkmanager.cpp", "Mu", null ],
 		[ "/home/mohnish/github/KDE-Tasks/src/taskmodel.cpp", "Mu", null ],
 		[ "/home/mohnish/github/KDE-Tasks/src/taskplugin.cpp", "Mu", null ],

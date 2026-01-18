@@ -131,24 +131,10 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.s"
 	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/mocs_compilation.cpp -o CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.s
 
-src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o: src/CMakeFiles/kdetasksplugin.dir/flags.make
-src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o: src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp
-src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o: src/CMakeFiles/kdetasksplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o"
-	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o -MF CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o.d -o CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o -c /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp
-
-src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.i"
-	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp > CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.i
-
-src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.s"
-	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp -o CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.s
-
 src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o: src/CMakeFiles/kdetasksplugin.dir/flags.make
 src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o: src/kdetasksplugin_qmltyperegistrations.cpp
 src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o: src/CMakeFiles/kdetasksplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o"
 	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o -MF CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o.d -o CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o -c /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_qmltyperegistrations.cpp
 
 src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.i: cmake_force
@@ -162,7 +148,7 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.s: cma
 src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o: src/CMakeFiles/kdetasksplugin.dir/flags.make
 src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o: src/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp
 src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o: src/CMakeFiles/kdetasksplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o"
 	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o -MF CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o.d -o CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o -c /home/mohnish/github/KDE-Tasks/build/src/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp
 
 src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.i: cmake_force
@@ -176,7 +162,7 @@ src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp
 src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o: src/CMakeFiles/kdetasksplugin.dir/flags.make
 src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o: /home/mohnish/github/KDE-Tasks/src/taskplugin.cpp
 src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o: src/CMakeFiles/kdetasksplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o"
 	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o -MF CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o.d -o CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o -c /home/mohnish/github/KDE-Tasks/src/taskplugin.cpp
 
 src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.i: cmake_force
@@ -190,7 +176,7 @@ src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.s: cmake_force
 src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o: src/CMakeFiles/kdetasksplugin.dir/flags.make
 src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o: /home/mohnish/github/KDE-Tasks/src/taskmodel.cpp
 src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o: src/CMakeFiles/kdetasksplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o"
 	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o -MF CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o.d -o CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.o -c /home/mohnish/github/KDE-Tasks/src/taskmodel.cpp
 
 src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.i: cmake_force
@@ -204,7 +190,7 @@ src/CMakeFiles/kdetasksplugin.dir/taskmodel.cpp.s: cmake_force
 src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: src/CMakeFiles/kdetasksplugin.dir/flags.make
 src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: /home/mohnish/github/KDE-Tasks/src/taskscontroller.cpp
 src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: src/CMakeFiles/kdetasksplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o"
 	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o -MF CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o.d -o CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o -c /home/mohnish/github/KDE-Tasks/src/taskscontroller.cpp
 
 src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.i: cmake_force
@@ -218,7 +204,7 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.s: cmake_force
 src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: src/CMakeFiles/kdetasksplugin.dir/flags.make
 src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: /home/mohnish/github/KDE-Tasks/src/networkmanager.cpp
 src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: src/CMakeFiles/kdetasksplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o"
 	cd /home/mohnish/github/KDE-Tasks/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o -MF CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o.d -o CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o -c /home/mohnish/github/KDE-Tasks/src/networkmanager.cpp
 
 src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.i: cmake_force
@@ -232,7 +218,6 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.s: cmake_force
 # Object files for target kdetasksplugin
 kdetasksplugin_OBJECTS = \
 "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o" \
 "CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o" \
 "CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o" \
 "CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o" \
@@ -244,7 +229,6 @@ kdetasksplugin_OBJECTS = \
 kdetasksplugin_EXTERNAL_OBJECTS =
 
 bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o
-bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_org_greenmarioh_kdetasksPlugin.cpp.o
 bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_qmltyperegistrations.cpp.o
 bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: src/CMakeFiles/kdetasksplugin.dir/.qt/rcc/qrc_qmake_org_greenmarioh_kdetasks.cpp.o
 bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: src/CMakeFiles/kdetasksplugin.dir/taskplugin.cpp.o
@@ -255,7 +239,7 @@ bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: src/CMakeFiles/kdetasksplugin
 bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: /usr/lib/libGLX.so
 bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: /usr/lib/libOpenGL.so
 bin/org/greenmarioh/kdetasks/libkdetasksplugin.so: src/CMakeFiles/kdetasksplugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared module ../bin/org/greenmarioh/kdetasks/libkdetasksplugin.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mohnish/github/KDE-Tasks/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared module ../bin/org/greenmarioh/kdetasks/libkdetasksplugin.so"
 	cd /home/mohnish/github/KDE-Tasks/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kdetasksplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
