@@ -4,28 +4,31 @@ import QtQuick.Controls as Controls
 import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.plasmoid
 import org.kde.plasma.components as PlasmaComponents
-import org.greenmarioh.kdetasks // This matches the URI in CMake
+import org.greenmarioh.kdetasks // Matches the URI defined in CMake
+import org.kde.kirigami as Kirigami
 
 PlasmoidItem {
     id: root
 
-    // Instantiate our C++ Controller
+    // Instantiate the C++ Controller
     TasksController {
         id: tasksController
     }
 
     // Set the preferred representation (the list of tasks)
     fullRepresentation: Item {
-        Layout.preferredWidth: PlasmaCore.Units.gridUnit * 20
-        Layout.preferredHeight: PlasmaCore.Units.gridUnit * 25
+        // Plasma 6 uses Kirigami.Units for consistent sizing
+        Layout.preferredWidth: Kirigami.Units.gridUnit * 20
+        Layout.preferredHeight: Kirigami.Units.gridUnit * 25
 
         ColumnLayout {
             anchors.fill: parent
-            spacing: PlasmaCore.Units.smallSpacing
+            anchors.margins: Kirigami.Units.smallSpacing
+            spacing: Kirigami.Units.smallSpacing
 
             // Show a login button if the model is empty (needs authentication)
             PlasmaComponents.Button {
-                text: "Login to Google Tasks"
+                text: i18n("Login to Google Tasks")
                 Layout.alignment: Qt.AlignCenter
                 visible: tasksController.tasksModel.rowCount === 0
                 onClicked: tasksController.authenticate()
@@ -39,12 +42,15 @@ PlasmoidItem {
 
                 ListView {
                     id: listView
-                    model: tasksController.tasksModel // Bind to our C++ Model
+                    model: tasksController.tasksModel // Bind to C++ Model
+                    clip: true
                     
                     delegate: PlasmaComponents.ItemDelegate {
                         width: listView.width
                         
                         contentItem: RowLayout {
+                            spacing: Kirigami.Units.smallSpacing
+
                             PlasmaComponents.CheckBox {
                                 checked: model.completed
                                 onToggled: model.completed = checked
@@ -55,6 +61,7 @@ PlasmoidItem {
                                 Layout.fillWidth: true
                                 elide: Text.ElideRight
                                 font.strikeout: model.completed
+                                opacity: model.completed ? 0.6 : 1.0
                             }
                         }
                     }
@@ -64,16 +71,26 @@ PlasmoidItem {
     }
 
     // Compact representation (icon on the panel)
-    compactRepresentation: PlasmaCore.IconItem {
+    // FIX: Replaced PlasmaCore.IconItem with Kirigami.Icon for Plasma 6
+    compactRepresentation: Kirigami.Icon {
         source: "task-accepted"
+        activeFocusOnTab: true
+        
         MouseArea {
             anchors.fill: parent
-            onClicked: tasksController.refreshTasks()
+            onClicked: {
+                if (root.expanded) {
+                    root.expanded = false;
+                } else {
+                    tasksController.refreshTasks();
+                    root.expanded = true;
+                }
+            }
         }
     }
     
     // Initial fetch when the widget loads
     Component.onCompleted: {
-        tasksController.refreshTasks()
+        tasksController.refreshTasks();
     }
 }
