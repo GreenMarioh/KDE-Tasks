@@ -1,0 +1,7 @@
+/usr/lib/qt6/qml/org/greenmarioh/kdetasks/libkdetasksplugin.so
+/usr/lib/qt6/qml/org/greenmarioh/kdetasks/qmldir
+/usr/lib/qt6/qml/org/greenmarioh/kdetasks/kdetasksplugin.qmltypes
+/usr/lib/qt6/qml/org/greenmarioh/kdetasks/kde-qmlmodule.version
+/usr/lib/qt6/qml/org/greenmarioh/kdetasks/libkdetasksplugin.so
+/usr/share/plasma/plasmoids/org.greenmarioh.kdetasks/contents/ui/main.qml
+/usr/share/plasma/plasmoids/org.greenmarioh.kdetasks/metadata.json

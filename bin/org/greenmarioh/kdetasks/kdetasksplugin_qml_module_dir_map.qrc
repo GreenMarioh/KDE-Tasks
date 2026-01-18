@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/org/greenmarioh/kdetasks">/home/mohnish/github/KDE-Tasks/bin/org/greenmarioh/kdetasks</file>
+
+  </qresource>
+</RCC>

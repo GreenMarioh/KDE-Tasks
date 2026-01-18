@@ -1,0 +1,13 @@
+--bare
+-I
+/usr/lib/qt6/qml
+-I
+/home/mohnish/github/KDE-Tasks/bin
+-I
+/home/mohnish/github/KDE-Tasks/bin
+-I
+/usr/lib/qt6/qml
+--resource
+/home/mohnish/github/KDE-Tasks/src/.qt/rcc/qmake_org_greenmarioh_kdetasks.qrc
+--json
+/home/mohnish/github/KDE-Tasks/kdetasksplugin_qmllint.json

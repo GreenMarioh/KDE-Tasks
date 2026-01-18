@@ -1,4 +1,0 @@
-/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/include/../EWIEGA46WW/moc_networkmanager.cpp.json
-/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/include/../EWIEGA46WW/moc_taskmodel.cpp.json
-/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/include/../EWIEGA46WW/moc_taskplugin.cpp.json
-/home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/include/../EWIEGA46WW/moc_taskscontroller.cpp.json

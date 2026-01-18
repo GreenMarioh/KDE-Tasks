@@ -4,6 +4,7 @@
 #include <QObject>
 #include "taskmodel.h"
 #include "networkmanager.h"
+#include <KWallet/Wallet> 
 
 class TasksController : public QObject
 {
@@ -20,8 +21,12 @@ public:
     Q_INVOKABLE void refreshTasks();
 
 private:
+    void loadCredentialsFromWallet();
+
     TasksModel *m_tasksModel;
     NetworkManager *m_networkManager;
+    QOAuth2AuthorizationCodeFlow *m_googleAuth;
+    KWallet::Wallet *m_wallet = nullptr;
 };
 
 #endif 

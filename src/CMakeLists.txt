@@ -18,6 +18,7 @@ target_link_libraries(kdetasksplugin
     Qt6::Network
     Qt6::NetworkAuth
     KF6::I18n
+    KF6::Wallet
 )
 
 ecm_finalize_qml_module(kdetasksplugin)
@@ -26,6 +27,3 @@ install(TARGETS kdetasksplugin
     DESTINATION ${KDE_INSTALL_QMLDIR}/org/greenmarioh/kdetasks
 )
 
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qmldir
-    DESTINATION ${KDE_INSTALL_QMLDIR}/org/greenmarioh/kdetasks
-)
