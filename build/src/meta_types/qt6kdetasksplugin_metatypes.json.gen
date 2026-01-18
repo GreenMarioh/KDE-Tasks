@@ -100,12 +100,12 @@
         "classes": [
             {
                 "className": "TasksController",
-                "lineNumber": 9,
+                "lineNumber": 10,
                 "methods": [
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 21,
+                        "lineNumber": 19,
                         "name": "refreshTasks",
                         "returnType": "void"
                     }

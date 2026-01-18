@@ -1,8 +1,7 @@
-src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o: \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/mocs_compilation.cpp \
+src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: \
+ /home/mohnish/github/KDE-Tasks/src/taskscontroller.cpp \
  /usr/include/stdc-predef.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_networkmanager.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/networkmanager.h \
+ /home/mohnish/github/KDE-Tasks/src/taskscontroller.h \
  /usr/include/qt6/QtCore/QObject /usr/include/qt6/QtCore/qobject.h \
  /usr/include/qt6/QtCore/qobjectdefs.h \
  /usr/include/qt6/QtCore/qnamespace.h /usr/include/qt6/QtCore/qglobal.h \
@@ -300,13 +299,13 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/include/qt6/QtCore/qbindingstorage.h /usr/include/c++/15.2.1/chrono \
  /usr/include/c++/15.2.1/bits/chrono.h /usr/include/c++/15.2.1/ratio \
  /usr/include/c++/15.2.1/ctime \
- /usr/include/qt6/QtNetwork/QNetworkAccessManager \
- /usr/include/qt6/QtNetwork/qnetworkaccessmanager.h \
+ /usr/include/qt6/QtNetworkAuth/QOAuth2AuthorizationCodeFlow \
+ /usr/include/qt6/QtNetworkAuth/qoauth2authorizationcodeflow.h \
+ /usr/include/qt6/QtNetworkAuth/qoauthglobal.h \
  /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
  /usr/include/qt6/QtNetwork/qtnetwork-config.h \
  /usr/include/qt6/QtNetwork/qtnetworkexports.h \
- /usr/include/qt6/QtNetwork/qnetworkrequest.h \
- /usr/include/qt6/QtNetwork/qhttpheaders.h \
+ /usr/include/qt6/QtNetworkAuth/qabstractoauth2.h \
  /usr/include/qt6/QtCore/qdatetime.h /usr/include/qt6/QtCore/qcalendar.h \
  /usr/include/qt6/QtCore/qlocale.h /usr/include/qt6/QtCore/qvariant.h \
  /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qtextstream.h \
@@ -330,6 +329,24 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtCore/q23utility.h \
  /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/qobject.h \
+ /usr/include/qt6/QtNetworkAuth/qabstractoauth.h \
+ /usr/include/qt6/QtCore/qurl.h /usr/include/KF6/KWallet/KWallet \
+ /usr/include/KF6/KWallet/kwallet.h /usr/include/qt6/QtCore/QStringList \
+ /usr/include/qt6/QtCore/qstringlist.h \
+ /usr/include/qt6/QtGui/qwindowdefs.h \
+ /usr/include/qt6/QtGui/qtguiglobal.h \
+ /usr/include/qt6/QtGui/qtgui-config.h \
+ /usr/include/qt6/QtGui/qtguiexports.h \
+ /usr/include/KF6/KWallet/kwallet_export.h \
+ /usr/include/KF6/KWallet/kwallet_version.h \
+ /home/mohnish/github/KDE-Tasks/src/taskmodel.h \
+ /usr/include/qt6/QtCore/QAbstractListModel \
+ /usr/include/qt6/QtCore/qabstractitemmodel.h \
+ /home/mohnish/github/KDE-Tasks/src/networkmanager.h \
+ /usr/include/qt6/QtNetwork/QNetworkAccessManager \
+ /usr/include/qt6/QtNetwork/qnetworkaccessmanager.h \
+ /usr/include/qt6/QtNetwork/qnetworkrequest.h \
+ /usr/include/qt6/QtNetwork/qhttpheaders.h \
  /usr/include/qt6/QtCore/qmetaobject.h \
  /usr/include/qt6/QtCore/QSharedDataPointer \
  /usr/include/qt6/QtCore/qshareddata.h /usr/include/qt6/QtCore/QString \
@@ -360,49 +377,32 @@ src/CMakeFiles/kdetasksplugin.dir/kdetasksplugin_autogen/mocs_compilation.cpp.o:
  /usr/include/qt6/QtNetwork/QNetworkRequest \
  /usr/include/qt6/QtNetwork/qnetworkrequest.h \
  /usr/include/qt6/QtNetwork/QNetworkAccessManager \
- /usr/include/qt6/QtCore/QString \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskmodel.h \
- /usr/include/qt6/QtCore/QAbstractListModel \
- /usr/include/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/qt6/QtNetwork/QSslError \
- /usr/include/qt6/QtNetwork/qsslerror.h \
- /usr/include/qt6/QtCore/qtmochelpers.h \
- /usr/include/qt6/QtCore/qtmocconstants.h \
- /usr/include/qt6/QtCore/q20algorithm.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskmodel.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskmodel.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskplugin.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskplugin.h \
- /usr/include/qt6/QtQml/QQmlExtensionPlugin \
- /usr/include/qt6/QtQml/qqmlextensionplugin.h \
- /usr/include/qt6/QtCore/qplugin.h /usr/include/qt6/QtCore/qpointer.h \
- /usr/include/qt6/QtCore/qjsonobject.h \
- /usr/include/qt6/QtCore/qjsonvalue.h \
- /usr/include/qt6/QtCore/qcborvalue.h \
- /usr/include/qt6/QtCore/qcborcommon.h \
- /usr/include/qt6/QtCore/qregularexpression.h \
- /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtCore/quuid.h \
- /usr/include/qt6/QtCore/qendian.h \
- /usr/include/qt6/QtCore/qjsondocument.h \
- /usr/include/qt6/QtCore/qjsonparseerror.h \
- /usr/include/qt6/QtQml/qqmlextensioninterface.h \
- /usr/include/qt6/QtQml/qtqmlglobal.h \
- /usr/include/qt6/QtQml/qtqml-config.h \
- /usr/include/qt6/QtQml/qtqmlexports.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskscontroller.cpp \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/taskscontroller.h \
- /usr/include/qt6/QtNetworkAuth/QOAuth2AuthorizationCodeFlow \
- /usr/include/qt6/QtNetworkAuth/qoauth2authorizationcodeflow.h \
- /usr/include/qt6/QtNetworkAuth/qoauthglobal.h \
- /usr/include/qt6/QtNetworkAuth/qabstractoauth2.h \
- /usr/include/qt6/QtNetworkAuth/qabstractoauth.h \
- /usr/include/KF6/KWallet/KWallet /usr/include/KF6/KWallet/kwallet.h \
- /usr/include/qt6/QtCore/QStringList \
- /usr/include/qt6/QtCore/qstringlist.h \
- /usr/include/qt6/QtGui/qwindowdefs.h \
- /usr/include/qt6/QtGui/qtguiglobal.h \
- /usr/include/qt6/QtGui/qtgui-config.h \
- /usr/include/qt6/QtGui/qtguiexports.h \
- /usr/include/KF6/KWallet/kwallet_export.h \
- /usr/include/KF6/KWallet/kwallet_version.h \
- /home/mohnish/github/KDE-Tasks/build/src/kdetasksplugin_autogen/EWIEGA46WW/../../../../src/networkmanager.h
+ /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/QDebug \
+ /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtGui/QDesktopServices \
+ /usr/include/qt6/QtGui/qdesktopservices.h /usr/include/qt6/QtCore/QUrl \
+ /usr/include/qt6/QtNetworkAuth/QOAuthHttpServerReplyHandler \
+ /usr/include/qt6/QtNetworkAuth/qoauthhttpserverreplyhandler.h \
+ /usr/include/qt6/QtNetworkAuth/qoauthoobreplyhandler.h \
+ /usr/include/qt6/QtNetworkAuth/qabstractoauthreplyhandler.h \
+ /usr/include/qt6/QtGui/QWindow /usr/include/qt6/QtGui/qwindow.h \
+ /usr/include/qt6/QtCore/QEvent /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/qt6/QtCore/QMargins /usr/include/qt6/QtCore/qmargins.h \
+ /usr/include/qt6/QtCore/qcheckedint_impl.h /usr/include/qt6/QtCore/QRect \
+ /usr/include/qt6/QtCore/qrect.h /usr/include/qt6/QtCore/qmargins.h \
+ /usr/include/qt6/QtCore/qsize.h /usr/include/qt6/QtCore/qpoint.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtGui/qsurface.h \
+ /usr/include/qt6/QtGui/qsurfaceformat.h \
+ /usr/include/qt6/QtGui/qwindowdefs.h /usr/include/qt6/QtGui/qicon.h \
+ /usr/include/qt6/QtGui/qpixmap.h /usr/include/qt6/QtGui/qpaintdevice.h \
+ /usr/include/qt6/QtCore/qrect.h /usr/include/qt6/QtGui/qcolor.h \
+ /usr/include/qt6/QtGui/qrgb.h /usr/include/qt6/QtGui/qrgba64.h \
+ /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtGui/qpixelformat.h \
+ /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qpolygon.h \
+ /usr/include/qt6/QtGui/qregion.h /usr/include/qt6/QtCore/qline.h \
+ /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
+ /usr/include/qt6/QtCore/QSet /usr/include/qt6/QtCore/qset.h

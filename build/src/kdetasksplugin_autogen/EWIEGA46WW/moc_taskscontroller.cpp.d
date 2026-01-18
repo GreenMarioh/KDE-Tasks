@@ -436,6 +436,11 @@
   /usr/include/qt6/QtNetwork/qtnetwork-config.h \
   /usr/include/qt6/QtNetwork/qtnetworkexports.h \
   /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
+  /usr/include/qt6/QtNetworkAuth/QOAuth2AuthorizationCodeFlow \
+  /usr/include/qt6/QtNetworkAuth/qabstractoauth.h \
+  /usr/include/qt6/QtNetworkAuth/qabstractoauth2.h \
+  /usr/include/qt6/QtNetworkAuth/qoauth2authorizationcodeflow.h \
+  /usr/include/qt6/QtNetworkAuth/qoauthglobal.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \

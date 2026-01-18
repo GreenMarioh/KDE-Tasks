@@ -458,6 +458,11 @@ src/kdetasksplugin_autogen/timestamp: src/kdetasksplugin_autogen/moc_predefs.h \
   /usr/include/qt6/QtNetwork/qtnetwork-config.h \
   /usr/include/qt6/QtNetwork/qtnetworkexports.h \
   /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
+  /usr/include/qt6/QtNetworkAuth/QOAuth2AuthorizationCodeFlow \
+  /usr/include/qt6/QtNetworkAuth/qabstractoauth.h \
+  /usr/include/qt6/QtNetworkAuth/qabstractoauth2.h \
+  /usr/include/qt6/QtNetworkAuth/qoauth2authorizationcodeflow.h \
+  /usr/include/qt6/QtNetworkAuth/qoauthglobal.h \
   /usr/include/qt6/QtQml/QQmlExtensionPlugin \
   /usr/include/qt6/QtQml/qqmlextensioninterface.h \
   /usr/include/qt6/QtQml/qqmlextensionplugin.h \
@@ -510,6 +515,12 @@ src/kdetasksplugin_autogen/timestamp: src/kdetasksplugin_autogen/moc_predefs.h \
 /usr/include/qt6/QtQml/qqmlextensionplugin.h:
 
 /usr/include/qt6/QtQml/qqmlextensioninterface.h:
+
+/usr/include/qt6/QtNetworkAuth/qoauthglobal.h:
+
+/usr/include/qt6/QtNetworkAuth/qabstractoauth2.h:
+
+/usr/include/qt6/QtNetworkAuth/QOAuth2AuthorizationCodeFlow:
 
 /usr/include/qt6/QtNetwork/qtnetwork-config.h:
 
@@ -760,6 +771,8 @@ src/kdetasksplugin_autogen/timestamp: src/kdetasksplugin_autogen/moc_predefs.h \
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/qt6/QtNetworkAuth/qoauth2authorizationcodeflow.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
@@ -1298,6 +1311,8 @@ src/kdetasksplugin_autogen/moc_predefs.h:
 /usr/include/qt6/QtCore/qiodevicebase.h:
 
 /usr/include/c++/15.2.1/utility:
+
+/usr/include/qt6/QtNetworkAuth/qabstractoauth.h:
 
 /usr/include/c++/15.2.1/bits/unordered_map.h:
 

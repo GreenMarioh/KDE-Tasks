@@ -2,24 +2,22 @@
 #define TASKSCONTROLLER_H
 
 #include <QObject>
+#include <QOAuth2AuthorizationCodeFlow> // FIX: Provides the definition for the OAuth pointer
+#include <KWallet>                      // FIX: Updated for KF6 standard
 #include "taskmodel.h"
 #include "networkmanager.h"
-#include <KWallet>
 
 class TasksController : public QObject
 {
     Q_OBJECT
-    // Expose the model so QML can bind to it
     Q_PROPERTY(TasksModel* tasksModel READ tasksModel CONSTANT)
 
 public:
     explicit TasksController(QObject *parent = nullptr);
-
     TasksModel* tasksModel() const { return m_tasksModel; }
 
-    // QML-accessible method to trigger a refresh
     Q_INVOKABLE void refreshTasks();
-    void authenticate();
+    void authenticate(); // FIX: Declare this so it can be called in .cpp
 
 private:
     void loadCredentialsFromWallet();
@@ -30,4 +28,4 @@ private:
     KWallet::Wallet *m_wallet = nullptr;
 };
 
-#endif 
+#endif
