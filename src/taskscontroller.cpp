@@ -2,11 +2,14 @@
 #include <QDebug>
 #include <QDesktopServices>
 #include <QUrl>
+#include <QUrlQuery>
 #include <QOAuthHttpServerReplyHandler> 
 #include <QOAuth2AuthorizationCodeFlow>
-#include <KWallet> // Correct header for KF6
+#include <KWallet> 
 #include <QWindow>
-#include <QSet>    // Ensure QSet is included for the scope tokens
+#include <QSet>
+#include <QMultiMap>
+#include <QVariant>
 
 TasksController::TasksController(QObject *parent)
     : QObject(parent),
@@ -14,26 +17,44 @@ TasksController::TasksController(QObject *parent)
       m_networkManager(new NetworkManager(this)),
       m_googleAuth(new QOAuth2AuthorizationCodeFlow(this))
 {
+    // 1. Basic OAuth2 setup
     m_googleAuth->setAuthorizationUrl(QUrl(QStringLiteral("https://accounts.google.com/o/oauth2/auth")));
-    
-    // Qt6: Use setTokenUrl instead of setAccessTokenUrl
     m_googleAuth->setTokenUrl(QUrl(QStringLiteral("https://oauth2.googleapis.com/token")));
-
-    loadCredentialsFromWallet();
     
-    const QString clientId = qEnvironmentVariable("GOOGLE_TASKS_CLIENT_ID");
-    const QString clientSecret = qEnvironmentVariable("GOOGLE_TASKS_CLIENT_SECRET");
+    // FIX: Request offline access and consent to ensure we get a refresh token
+    connect(m_googleAuth, &QOAuth2AuthorizationCodeFlow::authorizeWithBrowser, this, [this](const QUrl &url) {
+        QUrlQuery query(url);
+        query.addQueryItem(QStringLiteral("access_type"), QStringLiteral("offline"));
+        query.addQueryItem(QStringLiteral("prompt"), QStringLiteral("consent"));
+        QUrl authorizedUrl = url;
+        authorizedUrl.setQuery(query);
+        QDesktopServices::openUrl(authorizedUrl);
+    });
 
-    if (clientId.isEmpty() || clientSecret.isEmpty()) {
-        qWarning() << "Warning: GOOGLE_TASKS_CLIENT_ID or GOOGLE_TASKS_CLIENT_SECRET not set in environment!";
+    // FIX: Handle Google's double-encoding bug (Qt 6 QMultiMap)
+    m_googleAuth->setModifyParametersFunction([](QAbstractOAuth::Stage stage, auto *parameters) {
+        if (stage == QAbstractOAuth::Stage::RequestingAccessToken) {
+            const QByteArray code = parameters->value(QStringLiteral("code")).toByteArray();
+            parameters->replace(QStringLiteral("code"), QUrl::fromPercentEncoding(code));
+        }
+    });
+
+    // 2. Load Credentials (Logic is now centralized)
+    loadCredentialsFromWallet();
+
+    // 3. Final Validation check for the "Missing client_id" error
+    if (m_googleAuth->clientIdentifier().isEmpty()) {
+        qWarning() << "CRITICAL ERROR: No Client ID found! Check your .bashrc or KWallet.";
+    } else {
+        qDebug() << "OAuth initialized with Client ID:" << m_googleAuth->clientIdentifier();
     }
 
-    m_googleAuth->setClientIdentifier(clientId);
-    m_googleAuth->setClientIdentifierSharedKey(clientSecret);
-    
-    // FIX: Use QByteArrayLiteral instead of QStringLiteral to match QSet<QByteArray>
-    m_googleAuth->setRequestedScopeTokens({QByteArrayLiteral("https://www.googleapis.com/auth/tasks")});
+    // 4. Setup Scopes
+    QSet<QByteArray> scopes;
+    scopes.insert("https://www.googleapis.com/auth/tasks");
+    m_googleAuth->setRequestedScopeTokens(scopes);
 
+    // 5. Setup Reply Handler
     auto replyHandler = new QOAuthHttpServerReplyHandler(8080, this);
     m_googleAuth->setReplyHandler(replyHandler);
 
@@ -45,13 +66,12 @@ TasksController::TasksController(QObject *parent)
         qWarning() << "Google Tasks Error:" << error;
     });
 
-    // OAuth Connections
+    // Handle successful login
     connect(m_googleAuth, &QOAuth2AuthorizationCodeFlow::granted, this, [this]() {
+        qDebug() << "Login Successful!";
         m_networkManager->setAccessToken(m_googleAuth->token());
         m_networkManager->fetchTasks();
     });
-
-    connect(m_googleAuth, &QOAuth2AuthorizationCodeFlow::authorizeWithBrowser, &QDesktopServices::openUrl);
 }
 
 void TasksController::refreshTasks() {
@@ -64,42 +84,48 @@ void TasksController::refreshTasks() {
 }
 
 void TasksController::authenticate() {
+    // If we reach here and ID is still empty, the login will fail at Google's end
+    if (m_googleAuth->clientIdentifier().isEmpty()) {
+        qWarning() << "Cannot authenticate: Client ID is missing.";
+        return;
+    }
     m_googleAuth->grant();
 }
 
 void TasksController::loadCredentialsFromWallet() {
-    m_wallet = KWallet::Wallet::openWallet(KWallet::Wallet::LocalWallet(), 0);
+    // Priority 1: Environment Variables (easiest for testing)
+    QString clientId = qEnvironmentVariable("GOOGLE_TASKS_CLIENT_ID");
+    QString clientSecret = qEnvironmentVariable("GOOGLE_TASKS_CLIENT_SECRET");
 
-    if (m_wallet) {
-        const QString folder = QStringLiteral("KDE Tasks");
-        
-        if (!m_wallet->hasFolder(folder)) {
-            m_wallet->createFolder(folder);
-        }
-        m_wallet->setFolder(folder);
-
-        // KF6: readPassword requires a reference to store the value
-        QString clientId;
-        m_wallet->readPassword(QStringLiteral("clientId"), clientId);
-        
-        QString clientSecret;
-        m_wallet->readPassword(QStringLiteral("clientSecret"), clientSecret);
-
-        if (clientId.isEmpty()) {
-            clientId = qEnvironmentVariable("GOOGLE_TASKS_CLIENT_ID");
-            if (!clientId.isEmpty()) {
-                m_wallet->writePassword(QStringLiteral("clientId"), clientId);
+    // Priority 2: KWallet (if Environment Variables are empty)
+    if (clientId.isEmpty() || clientSecret.isEmpty()) {
+        m_wallet = KWallet::Wallet::openWallet(KWallet::Wallet::LocalWallet(), 0);
+        if (m_wallet) {
+            const QString folder = QStringLiteral("KDE Tasks");
+            if (m_wallet->hasFolder(folder)) {
+                m_wallet->setFolder(folder);
+                QString walletId, walletSecret;
+                m_wallet->readPassword(QStringLiteral("clientId"), walletId);
+                m_wallet->readPassword(QStringLiteral("clientSecret"), walletSecret);
+                
+                if (clientId.isEmpty()) clientId = walletId;
+                if (clientSecret.isEmpty()) clientSecret = walletSecret;
             }
         }
-        
-        if (clientSecret.isEmpty()) {
-            clientSecret = qEnvironmentVariable("GOOGLE_TASKS_CLIENT_SECRET");
-            if (!clientSecret.isEmpty()) {
-                m_wallet->writePassword(QStringLiteral("clientSecret"), clientSecret);
-            }
-        }
+    }
 
+    // Apply found credentials to the OAuth object
+    if (!clientId.isEmpty()) {
         m_googleAuth->setClientIdentifier(clientId);
         m_googleAuth->setClientIdentifierSharedKey(clientSecret);
+        
+        // If we have a wallet open, make sure these are saved for next time
+        if (m_wallet && m_wallet->isOpen()) {
+            const QString folder = QStringLiteral("KDE Tasks");
+            if (!m_wallet->hasFolder(folder)) m_wallet->createFolder(folder);
+            m_wallet->setFolder(folder);
+            m_wallet->writePassword(QStringLiteral("clientId"), clientId);
+            m_wallet->writePassword(QStringLiteral("clientSecret"), clientSecret);
+        }
     }
 }

@@ -380,6 +380,7 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: \
  /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/QDebug \
  /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtGui/QDesktopServices \
  /usr/include/qt6/QtGui/qdesktopservices.h /usr/include/qt6/QtCore/QUrl \
+ /usr/include/qt6/QtCore/QUrlQuery /usr/include/qt6/QtCore/qurlquery.h \
  /usr/include/qt6/QtNetworkAuth/QOAuthHttpServerReplyHandler \
  /usr/include/qt6/QtNetworkAuth/qoauthhttpserverreplyhandler.h \
  /usr/include/qt6/QtNetworkAuth/qoauthoobreplyhandler.h \
@@ -405,4 +406,6 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: \
  /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qpolygon.h \
  /usr/include/qt6/QtGui/qregion.h /usr/include/qt6/QtCore/qline.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /usr/include/qt6/QtCore/QSet /usr/include/qt6/QtCore/qset.h
+ /usr/include/qt6/QtCore/QSet /usr/include/qt6/QtCore/qset.h \
+ /usr/include/qt6/QtCore/QMultiMap /usr/include/qt6/QtCore/qmap.h \
+ /usr/include/qt6/QtCore/QVariant

@@ -3152,6 +3152,7 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: /home/mohnish/github/KD
   /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QMargins \
   /usr/include/qt6/QtCore/QMetaType \
+  /usr/include/qt6/QtCore/QMultiMap \
   /usr/include/qt6/QtCore/QObject \
   /usr/include/qt6/QtCore/QRect \
   /usr/include/qt6/QtCore/QSet \
@@ -3159,6 +3160,7 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: /home/mohnish/github/KD
   /usr/include/qt6/QtCore/QString \
   /usr/include/qt6/QtCore/QStringList \
   /usr/include/qt6/QtCore/QUrl \
+  /usr/include/qt6/QtCore/QUrlQuery \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -3295,6 +3297,7 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: /home/mohnish/github/KD
   /usr/include/qt6/QtCore/qtypeinfo.h \
   /usr/include/qt6/QtCore/qtypes.h \
   /usr/include/qt6/QtCore/qurl.h \
+  /usr/include/qt6/QtCore/qurlquery.h \
   /usr/include/qt6/QtCore/qutf8stringview.h \
   /usr/include/qt6/QtCore/qvariant.h \
   /usr/include/qt6/QtCore/qvarlengtharray.h \
@@ -3424,6 +3427,8 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: /home/mohnish/github/KD
 /usr/include/qt6/QtCore/qcheckedint_impl.h:
 
 /usr/include/qt6/QtCore/qabstracteventdispatcher.h:
+
+/usr/include/qt6/QtCore/QUrlQuery:
 
 /usr/include/qt6/QtCore/QSet:
 
@@ -3837,6 +3842,8 @@ src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskmodel.cpp:
 
 /usr/include/c++/15.2.1/bits/hashtable.h:
 
+/usr/include/qt6/QtCore/qurlquery.h:
+
 /usr/include/qt6/QtCore/qhashfunctions.h:
 
 /home/mohnish/github/KDE-Tasks/src/networkmanager.h:
@@ -3860,6 +3867,8 @@ src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskmodel.cpp:
 /usr/include/c++/15.2.1/bits/parse_numbers.h:
 
 /usr/include/c++/15.2.1/tr1/ell_integral.tcc:
+
+/usr/include/qt6/QtCore/QMultiMap:
 
 /usr/include/bits/endianness.h:
 

@@ -8,7 +8,8 @@
         "Name": "KDE Tasks",
         "Icon": "task-accepted",
         "Description": "Google Tasks integration for KDE",
-        "Version": "0.1"
+        "Version": "0.1",
+        "ServiceTypes": ["Plasma/Applet"]
     },
     "X-Plasma-API-Minimum-Version": "6.0"
 }
