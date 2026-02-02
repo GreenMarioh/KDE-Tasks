@@ -74,7 +74,7 @@ CMakeFiles/generate_qmlls_build_ini_file: .qt/.qmlls.build.ini
 	/usr/bin/cmake -E echo_append docDir= >> /home/mohnish/github/KDE-Tasks/build/.qt/.qmlls.build.ini
 	/usr/lib/qt6/bin/qtpaths --query QT_INSTALL_DOCS >> /home/mohnish/github/KDE-Tasks/build/.qt/.qmlls.build.ini
 	/usr/bin/cmake -E echo "[<SLASH>home<SLASH>mohnish<SLASH>github<SLASH>KDE-Tasks<SLASH>src]" >> /home/mohnish/github/KDE-Tasks/build/.qt/.qmlls.build.ini
-	/usr/bin/cmake -E echo importPaths=\"/usr/lib/qt6/qml\" >> /home/mohnish/github/KDE-Tasks/build/.qt/.qmlls.build.ini
+	/usr/bin/cmake -E echo importPaths=\"/usr/lib/qt6/qml:/home/mohnish/github/KDE-Tasks/build/bin:/home/mohnish/github/KDE-Tasks/build/bin/org/greenmarioh/kdetasks\" >> /home/mohnish/github/KDE-Tasks/build/.qt/.qmlls.build.ini
 
 CMakeFiles/generate_qmlls_build_ini_file.dir/codegen:
 .PHONY : CMakeFiles/generate_qmlls_build_ini_file.dir/codegen

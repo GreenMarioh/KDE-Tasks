@@ -70,3 +70,30 @@ void NetworkManager::updateTaskStatus(const QString &listId, const QString &task
     
     m_manager->sendCustomRequest(request, "PATCH", QJsonDocument(body).toJson());
 }
+
+void NetworkManager::addTask(const QString &listId, const QString &title) {
+    if (m_accessToken.isEmpty()) {
+        Q_EMIT errorOccurred(QStringLiteral("No access token set"));
+        return;
+    }
+
+    QUrl url(QStringLiteral("https://www.googleapis.com/tasks/v1/lists/%1/tasks").arg(listId));
+    QNetworkRequest request(url);
+    request.setRawHeader("Authorization", "Bearer " + m_accessToken.toUtf8());
+    request.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+
+    QJsonObject body;
+    body[QStringLiteral("title")] = title;
+
+    QNetworkReply *reply = m_manager->post(request, QJsonDocument(body).toJson());
+    connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+        reply->deleteLater();
+
+        if (reply->error() != QNetworkReply::NoError) {
+            Q_EMIT errorOccurred(reply->errorString());
+            return;
+        }
+
+        Q_EMIT taskAdded();
+    });
+}

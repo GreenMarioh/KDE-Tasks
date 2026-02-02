@@ -3,6 +3,8 @@
 -I
 /home/mohnish/github/KDE-Tasks/build/bin
 -I
+/home/mohnish/github/KDE-Tasks/build/bin/org/greenmarioh/kdetasks
+-I
 /home/mohnish/github/KDE-Tasks/build/bin
 -I
 /usr/lib/qt6/qml

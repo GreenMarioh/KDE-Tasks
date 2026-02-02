@@ -17,7 +17,9 @@ public:
     TasksModel* tasksModel() const { return m_tasksModel; }
 
     Q_INVOKABLE void refreshTasks();
-    void authenticate(); // FIX: Declare this so it can be called in .cpp
+    Q_INVOKABLE void authenticate();
+    Q_INVOKABLE void addTask(const QString &title);
+    Q_INVOKABLE void setTaskCompleted(const QString &taskId, bool completed);
 
 private:
     void loadCredentialsFromWallet();

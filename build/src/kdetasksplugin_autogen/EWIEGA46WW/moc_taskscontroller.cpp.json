@@ -10,6 +10,43 @@
                     "lineNumber": 19,
                     "name": "refreshTasks",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 20,
+                    "name": "authenticate",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 21,
+                    "name": "addTask",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "taskId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "completed",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 22,
+                    "name": "setTaskCompleted",
+                    "returnType": "void"
                 }
             ],
             "object": true,

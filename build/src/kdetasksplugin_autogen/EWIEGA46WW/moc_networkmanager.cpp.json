@@ -15,7 +15,7 @@
                         }
                     ],
                     "index": 0,
-                    "lineNumber": 22,
+                    "lineNumber": 23,
                     "name": "tasksFetched",
                     "returnType": "void"
                 },
@@ -28,8 +28,15 @@
                         }
                     ],
                     "index": 1,
-                    "lineNumber": 23,
+                    "lineNumber": 24,
                     "name": "errorOccurred",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 25,
+                    "name": "taskAdded",
                     "returnType": "void"
                 }
             ],
@@ -42,8 +49,8 @@
                             "type": "QNetworkReply*"
                         }
                     ],
-                    "index": 2,
-                    "lineNumber": 26,
+                    "index": 3,
+                    "lineNumber": 28,
                     "name": "onTasksReceived",
                     "returnType": "void"
                 }

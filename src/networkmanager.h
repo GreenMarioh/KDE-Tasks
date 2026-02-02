@@ -17,10 +17,12 @@ public:
     void setAccessToken(const QString &token);
     void fetchTasks(const QString &listId = QStringLiteral("@default"));
     void updateTaskStatus(const QString &listId, const QString &taskId, bool completed);
+    void addTask(const QString &listId, const QString &title);
 
 Q_SIGNALS:
     void tasksFetched(const std::vector<TaskItem> &tasks);
     void errorOccurred(const QString &error);
+    void taskAdded();
 
 private Q_SLOTS:
     void onTasksReceived(QNetworkReply *reply);

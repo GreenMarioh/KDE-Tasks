@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'taskscontroller.h'
 **
-** Created by: The Qt Meta Object Compiler version 69 (Qt 6.10.1)
+** Created by: The Qt Meta Object Compiler version 69 (Qt 6.10.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -19,7 +19,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'taskscontroller.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 69
-#error "This file was generated using the moc from 6.10.1. It"
+#error "This file was generated using the moc from 6.10.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -42,6 +42,12 @@ template <> constexpr inline auto TasksController::qt_create_metaobjectdata<qt_m
         "TasksController",
         "refreshTasks",
         "",
+        "authenticate",
+        "addTask",
+        "title",
+        "setTaskCompleted",
+        "taskId",
+        "completed",
         "tasksModel",
         "TasksModel*"
     };
@@ -49,10 +55,20 @@ template <> constexpr inline auto TasksController::qt_create_metaobjectdata<qt_m
     QtMocHelpers::UintData qt_methods {
         // Method 'refreshTasks'
         QtMocHelpers::MethodData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Method 'authenticate'
+        QtMocHelpers::MethodData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Method 'addTask'
+        QtMocHelpers::MethodData<void(const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 5 },
+        }}),
+        // Method 'setTaskCompleted'
+        QtMocHelpers::MethodData<void(const QString &, bool)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 7 }, { QMetaType::Bool, 8 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'tasksModel'
-        QtMocHelpers::PropertyData<TasksModel*>(3, 0x80000000 | 4, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        QtMocHelpers::PropertyData<TasksModel*>(9, 0x80000000 | 10, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -75,6 +91,9 @@ void TasksController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->refreshTasks(); break;
+        case 1: _t->authenticate(); break;
+        case 2: _t->addTask((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 3: _t->setTaskCompleted((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[2]))); break;
         default: ;
         }
     }
@@ -113,14 +132,14 @@ int TasksController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 4;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

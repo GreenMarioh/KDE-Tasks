@@ -66,6 +66,10 @@ TasksController::TasksController(QObject *parent)
         qWarning() << "Google Tasks Error:" << error;
     });
 
+    connect(m_networkManager, &NetworkManager::taskAdded, this, [this]() {
+        m_networkManager->fetchTasks();
+    });
+
     // Handle successful login
     connect(m_googleAuth, &QOAuth2AuthorizationCodeFlow::granted, this, [this]() {
         qDebug() << "Login Successful!";
@@ -90,6 +94,31 @@ void TasksController::authenticate() {
         return;
     }
     m_googleAuth->grant();
+}
+
+void TasksController::addTask(const QString &title) {
+    const QString trimmed = title.trimmed();
+    if (trimmed.isEmpty()) return;
+
+    if (m_googleAuth->token().isEmpty()) {
+        authenticate();
+        return;
+    }
+
+    m_networkManager->setAccessToken(m_googleAuth->token());
+    m_networkManager->addTask(QStringLiteral("@default"), trimmed);
+}
+
+void TasksController::setTaskCompleted(const QString &taskId, bool completed) {
+    if (taskId.isEmpty()) return;
+
+    if (m_googleAuth->token().isEmpty()) {
+        authenticate();
+        return;
+    }
+
+    m_networkManager->setAccessToken(m_googleAuth->token());
+    m_networkManager->updateTaskStatus(QStringLiteral("@default"), taskId, completed);
 }
 
 void TasksController::loadCredentialsFromWallet() {
