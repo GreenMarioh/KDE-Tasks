@@ -40,8 +40,9 @@ template <> constexpr inline auto TasksController::qt_create_metaobjectdata<qt_m
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "TasksController",
-        "refreshTasks",
+        "lastErrorChanged",
         "",
+        "refreshTasks",
         "authenticate",
         "addTask",
         "title",
@@ -49,26 +50,31 @@ template <> constexpr inline auto TasksController::qt_create_metaobjectdata<qt_m
         "taskId",
         "completed",
         "tasksModel",
-        "TasksModel*"
+        "TasksModel*",
+        "lastError"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Signal 'lastErrorChanged'
+        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'refreshTasks'
-        QtMocHelpers::MethodData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
-        // Method 'authenticate'
         QtMocHelpers::MethodData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Method 'authenticate'
+        QtMocHelpers::MethodData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'addTask'
-        QtMocHelpers::MethodData<void(const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 5 },
+        QtMocHelpers::MethodData<void(const QString &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 6 },
         }}),
         // Method 'setTaskCompleted'
-        QtMocHelpers::MethodData<void(const QString &, bool)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 7 }, { QMetaType::Bool, 8 },
+        QtMocHelpers::MethodData<void(const QString &, bool)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 8 }, { QMetaType::Bool, 9 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'tasksModel'
-        QtMocHelpers::PropertyData<TasksModel*>(9, 0x80000000 | 10, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        QtMocHelpers::PropertyData<TasksModel*>(10, 0x80000000 | 11, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        // property 'lastError'
+        QtMocHelpers::PropertyData<QString>(12, QMetaType::QString, QMC::DefaultPropertyFlags, 0),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -90,12 +96,17 @@ void TasksController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
     auto *_t = static_cast<TasksController *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->refreshTasks(); break;
-        case 1: _t->authenticate(); break;
-        case 2: _t->addTask((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 3: _t->setTaskCompleted((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[2]))); break;
+        case 0: _t->lastErrorChanged(); break;
+        case 1: _t->refreshTasks(); break;
+        case 2: _t->authenticate(); break;
+        case 3: _t->addTask((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->setTaskCompleted((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<bool>>(_a[2]))); break;
         default: ;
         }
+    }
+    if (_c == QMetaObject::IndexOfMethod) {
+        if (QtMocHelpers::indexOfMethod<void (TasksController::*)()>(_a, &TasksController::lastErrorChanged, 0))
+            return;
     }
     if (_c == QMetaObject::RegisterPropertyMetaType) {
         switch (_id) {
@@ -108,6 +119,7 @@ void TasksController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         void *_v = _a[0];
         switch (_id) {
         case 0: *reinterpret_cast<TasksModel**>(_v) = _t->tasksModel(); break;
+        case 1: *reinterpret_cast<QString*>(_v) = _t->lastError(); break;
         default: break;
         }
     }
@@ -132,21 +144,27 @@ int TasksController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
+}
+
+// SIGNAL 0
+void TasksController::lastErrorChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP

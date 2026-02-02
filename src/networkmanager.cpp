@@ -1,9 +1,11 @@
 #include "networkmanager.h"
 #include <QNetworkRequest>
 #include <QUrl>
+#include <QUrlQuery>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QDebug>
 
 NetworkManager::NetworkManager(QObject *parent) 
     : QObject(parent)
@@ -22,6 +24,13 @@ void NetworkManager::fetchTasks(const QString &listId) {
     }
 
     QUrl url(QStringLiteral("https://www.googleapis.com/tasks/v1/lists/%1/tasks").arg(listId));
+    QUrlQuery query;
+    query.addQueryItem(QStringLiteral("showCompleted"), QStringLiteral("true"));
+    query.addQueryItem(QStringLiteral("showHidden"), QStringLiteral("true"));
+    query.addQueryItem(QStringLiteral("maxResults"), QStringLiteral("100"));
+    query.addQueryItem(QStringLiteral("fields"), QStringLiteral("items(id,title,status)"));
+    url.setQuery(query);
+    qDebug() << "Fetching tasks from:" << url.toString();
     QNetworkRequest request(url);
     request.setRawHeader("Authorization", "Bearer " + m_accessToken.toUtf8());
 
@@ -33,20 +42,39 @@ void NetworkManager::fetchTasks(const QString &listId) {
 
 void NetworkManager::onTasksReceived(QNetworkReply *reply) {
     reply->deleteLater();
+    const int statusCode = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+    qDebug() << "Tasks fetch HTTP status:" << statusCode;
 
     if (reply->error() != QNetworkReply::NoError) {
-        Q_EMIT errorOccurred(reply->errorString());
+        const QByteArray payload = reply->readAll();
+        const QString details = payload.isEmpty() ? reply->errorString()
+                                                  : QString::fromUtf8(payload);
+        Q_EMIT errorOccurred(details);
         return;
     }
 
     QByteArray data = reply->readAll();
+    qDebug() << "Tasks fetch response bytes:" << data.size();
     QJsonDocument doc = QJsonDocument::fromJson(data);
+    if (!doc.isObject()) {
+        qDebug() << "Tasks fetch: response is not a JSON object";
+        Q_EMIT errorOccurred(QStringLiteral("Tasks fetch returned non-object JSON."));
+        return;
+    }
     QJsonObject obj = doc.object();
-    QJsonArray items = obj[QStringLiteral("items")].toArray();
+    const QJsonValue itemsValue = obj.value(QStringLiteral("items"));
+    QJsonArray items = itemsValue.toArray();
+    qDebug() << "Tasks fetch items count:" << items.size();
+    if (items.isEmpty()) {
+        qDebug() << "Tasks fetch object keys:" << obj.keys();
+    }
 
     std::vector<TaskItem> tasks;
     for (const QJsonValue &value : items) {
         QJsonObject taskObj = value.toObject();
+        if (tasks.size() < 3) {
+            qDebug() << "Task sample:" << taskObj.keys();
+        }
         tasks.push_back({
             taskObj[QStringLiteral("id")].toString(),
             taskObj[QStringLiteral("title")].toString(),
@@ -54,6 +82,7 @@ void NetworkManager::onTasksReceived(QNetworkReply *reply) {
         });
     }
 
+    qDebug() << "Tasks parsed:" << static_cast<int>(tasks.size());
     Q_EMIT tasksFetched(tasks);
 }
 
@@ -90,7 +119,10 @@ void NetworkManager::addTask(const QString &listId, const QString &title) {
         reply->deleteLater();
 
         if (reply->error() != QNetworkReply::NoError) {
-            Q_EMIT errorOccurred(reply->errorString());
+            const QByteArray payload = reply->readAll();
+            const QString details = payload.isEmpty() ? reply->errorString()
+                                                      : QString::fromUtf8(payload);
+            Q_EMIT errorOccurred(details);
             return;
         }
 

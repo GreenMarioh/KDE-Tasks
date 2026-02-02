@@ -1731,6 +1731,7 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o
  /usr/include/math.h
  /usr/include/pthread.h
  /usr/include/qt6/QtCore/QAbstractListModel
+ /usr/include/qt6/QtCore/QDebug
  /usr/include/qt6/QtCore/QFlags
  /usr/include/qt6/QtCore/QIODevice
  /usr/include/qt6/QtCore/QJsonArray
@@ -1742,6 +1743,7 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o
  /usr/include/qt6/QtCore/QSharedDataPointer
  /usr/include/qt6/QtCore/QString
  /usr/include/qt6/QtCore/QUrl
+ /usr/include/qt6/QtCore/QUrlQuery
  /usr/include/qt6/QtCore/QVariant
  /usr/include/qt6/QtCore/q17memory.h
  /usr/include/qt6/QtCore/q20functional.h
@@ -1875,6 +1877,7 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o
  /usr/include/qt6/QtCore/qtypeinfo.h
  /usr/include/qt6/QtCore/qtypes.h
  /usr/include/qt6/QtCore/qurl.h
+ /usr/include/qt6/QtCore/qurlquery.h
  /usr/include/qt6/QtCore/qutf8stringview.h
  /usr/include/qt6/QtCore/quuid.h
  /usr/include/qt6/QtCore/qvariant.h

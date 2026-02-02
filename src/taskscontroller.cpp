@@ -61,9 +61,15 @@ TasksController::TasksController(QObject *parent)
     // Internal Connections
     connect(m_networkManager, &NetworkManager::tasksFetched, 
             m_tasksModel, &TasksModel::setTasks);
+    connect(m_networkManager, &NetworkManager::tasksFetched, this, [this]() {
+        setLastError(QString());
+    });
 
     connect(m_networkManager, &NetworkManager::errorOccurred, this, [](const QString &error){
         qWarning() << "Google Tasks Error:" << error;
+    });
+    connect(m_networkManager, &NetworkManager::errorOccurred, this, [this](const QString &error){
+        setLastError(error);
     });
 
     connect(m_networkManager, &NetworkManager::taskAdded, this, [this]() {
@@ -73,6 +79,8 @@ TasksController::TasksController(QObject *parent)
     // Handle successful login
     connect(m_googleAuth, &QOAuth2AuthorizationCodeFlow::granted, this, [this]() {
         qDebug() << "Login Successful!";
+        qDebug() << "Access token length:" << m_googleAuth->token().size();
+        setLastError(QString());
         m_networkManager->setAccessToken(m_googleAuth->token());
         m_networkManager->fetchTasks();
     });
@@ -83,6 +91,7 @@ void TasksController::refreshTasks() {
         m_networkManager->setAccessToken(m_googleAuth->token());
         m_networkManager->fetchTasks();
     } else {
+        setLastError(QStringLiteral("Not signed in yet. Click Sign In to continue."));
         authenticate();
     }
 }
@@ -91,6 +100,7 @@ void TasksController::authenticate() {
     // If we reach here and ID is still empty, the login will fail at Google's end
     if (m_googleAuth->clientIdentifier().isEmpty()) {
         qWarning() << "Cannot authenticate: Client ID is missing.";
+        setLastError(QStringLiteral("Client ID is missing. Check your environment variables or KWallet."));
         return;
     }
     m_googleAuth->grant();
@@ -101,6 +111,7 @@ void TasksController::addTask(const QString &title) {
     if (trimmed.isEmpty()) return;
 
     if (m_googleAuth->token().isEmpty()) {
+        setLastError(QStringLiteral("Please sign in before adding tasks."));
         authenticate();
         return;
     }
@@ -113,6 +124,7 @@ void TasksController::setTaskCompleted(const QString &taskId, bool completed) {
     if (taskId.isEmpty()) return;
 
     if (m_googleAuth->token().isEmpty()) {
+        setLastError(QStringLiteral("Please sign in before updating tasks."));
         authenticate();
         return;
     }
@@ -157,4 +169,10 @@ void TasksController::loadCredentialsFromWallet() {
             m_wallet->writePassword(QStringLiteral("clientSecret"), clientSecret);
         }
     }
+}
+
+void TasksController::setLastError(const QString &error) {
+    if (m_lastError == error) return;
+    m_lastError = error;
+    Q_EMIT lastErrorChanged();
 }

@@ -9,7 +9,7 @@ Window {
     visible: true
     title: "KDE Tasks"
 
-    TasksUi.TasksPage {
+    TasksPageStandalone {
         anchors.fill: parent
     }
 }

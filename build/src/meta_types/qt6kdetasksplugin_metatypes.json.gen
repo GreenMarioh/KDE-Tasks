@@ -111,15 +111,15 @@
                 "methods": [
                     {
                         "access": "public",
-                        "index": 0,
-                        "lineNumber": 19,
+                        "index": 1,
+                        "lineNumber": 21,
                         "name": "refreshTasks",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 1,
-                        "lineNumber": 20,
+                        "index": 2,
+                        "lineNumber": 22,
                         "name": "authenticate",
                         "returnType": "void"
                     },
@@ -131,8 +131,8 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 2,
-                        "lineNumber": 21,
+                        "index": 3,
+                        "lineNumber": 23,
                         "name": "addTask",
                         "returnType": "void"
                     },
@@ -148,8 +148,8 @@
                                 "type": "bool"
                             }
                         ],
-                        "index": 3,
-                        "lineNumber": 22,
+                        "index": 4,
+                        "lineNumber": 24,
                         "name": "setTaskCompleted",
                         "returnType": "void"
                     }
@@ -169,9 +169,33 @@
                         "stored": true,
                         "type": "TasksModel*",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 14,
+                        "name": "lastError",
+                        "notify": "lastErrorChanged",
+                        "read": "lastError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
                     }
                 ],
                 "qualifiedClassName": "TasksController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 27,
+                        "name": "lastErrorChanged",
+                        "returnType": "void"
+                    }
+                ],
                 "superClasses": [
                     {
                         "access": "public",

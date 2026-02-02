@@ -364,7 +364,8 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: \
  /usr/include/qt6/QtCore/QAbstractListModel \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/qt6/QtNetwork/QNetworkRequest /usr/include/qt6/QtCore/QUrl \
- /usr/include/qt6/QtCore/QJsonDocument \
+ /usr/include/qt6/QtCore/QUrlQuery /usr/include/qt6/QtCore/qurlquery.h \
+ /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtCore/QJsonDocument \
  /usr/include/qt6/QtCore/qjsondocument.h \
  /usr/include/qt6/QtCore/qjsonparseerror.h \
  /usr/include/qt6/QtCore/QJsonObject \
@@ -373,7 +374,7 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: \
  /usr/include/qt6/QtCore/qcborvalue.h \
  /usr/include/qt6/QtCore/qcborcommon.h \
  /usr/include/qt6/QtCore/qregularexpression.h \
- /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtCore/quuid.h \
- /usr/include/qt6/QtCore/qendian.h \
+ /usr/include/qt6/QtCore/quuid.h /usr/include/qt6/QtCore/qendian.h \
  /usr/include/qt6/QtCore/qjsondocument.h \
- /usr/include/qt6/QtCore/QJsonArray /usr/include/qt6/QtCore/qjsonarray.h
+ /usr/include/qt6/QtCore/QJsonArray /usr/include/qt6/QtCore/qjsonarray.h \
+ /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h

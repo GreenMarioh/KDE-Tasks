@@ -1726,6 +1726,7 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: /home/mohnish/github/KDE
   /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/qt6/QtCore/QAbstractListModel \
+  /usr/include/qt6/QtCore/QDebug \
   /usr/include/qt6/QtCore/QFlags \
   /usr/include/qt6/QtCore/QIODevice \
   /usr/include/qt6/QtCore/QJsonArray \
@@ -1737,6 +1738,7 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: /home/mohnish/github/KDE
   /usr/include/qt6/QtCore/QSharedDataPointer \
   /usr/include/qt6/QtCore/QString \
   /usr/include/qt6/QtCore/QUrl \
+  /usr/include/qt6/QtCore/QUrlQuery \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -1870,6 +1872,7 @@ src/CMakeFiles/kdetasksplugin.dir/networkmanager.cpp.o: /home/mohnish/github/KDE
   /usr/include/qt6/QtCore/qtypeinfo.h \
   /usr/include/qt6/QtCore/qtypes.h \
   /usr/include/qt6/QtCore/qurl.h \
+  /usr/include/qt6/QtCore/qurlquery.h \
   /usr/include/qt6/QtCore/qutf8stringview.h \
   /usr/include/qt6/QtCore/quuid.h \
   /usr/include/qt6/QtCore/qvariant.h \
@@ -3428,13 +3431,15 @@ src/CMakeFiles/kdetasksplugin.dir/taskscontroller.cpp.o: /home/mohnish/github/KD
 
 /usr/include/qt6/QtCore/qabstracteventdispatcher.h:
 
-/usr/include/qt6/QtCore/QUrlQuery:
-
 /usr/include/qt6/QtCore/QSet:
 
 /usr/include/qt6/QtCore/QRect:
 
 /usr/include/qt6/QtCore/QEvent:
+
+/usr/include/qt6/QtQml/qqmlerror.h:
+
+/usr/include/qt6/QtQml/qqmlengine.h:
 
 /usr/include/c++/15.2.1/variant:
 
@@ -3842,10 +3847,6 @@ src/kdetasksplugin_autogen/EWIEGA46WW/moc_taskmodel.cpp:
 
 /usr/include/c++/15.2.1/bits/hashtable.h:
 
-/usr/include/qt6/QtCore/qurlquery.h:
-
-/usr/include/qt6/QtCore/qhashfunctions.h:
-
 /home/mohnish/github/KDE-Tasks/src/networkmanager.h:
 
 /home/mohnish/github/KDE-Tasks/src/networkmanager.cpp:
@@ -3967,8 +3968,6 @@ src/kdetasksplugin_autogen/moc_predefs.h:
 /usr/include/qt6/QtCore/qscopeguard.h:
 
 /usr/include/c++/15.2.1/streambuf:
-
-/usr/include/qt6/QtQml/qqmlerror.h:
 
 /usr/include/c++/15.2.1/bits/functexcept.h:
 
@@ -4520,6 +4519,8 @@ src/kdetasksplugin_qmltyperegistrations.cpp:
 
 /usr/include/qt6/QtQml/qjsvalue.h:
 
+/usr/include/qt6/QtCore/QUrlQuery:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
 
 /usr/include/bits/types/sigset_t.h:
@@ -4534,6 +4535,10 @@ src/kdetasksplugin_qmltyperegistrations.cpp:
 
 /usr/include/qt6/QtCore/QJsonArray:
 
+/usr/include/qt6/QtCore/qhashfunctions.h:
+
+/usr/include/qt6/QtCore/qurlquery.h:
+
 /usr/include/bits/stdio_lim.h:
 
 /usr/include/qt6/QtCore/qtimezone.h:
@@ -4541,5 +4546,3 @@ src/kdetasksplugin_qmltyperegistrations.cpp:
 /usr/include/qt6/QtGui/qsurface.h:
 
 /usr/include/qt6/QtQml/qjsmanagedvalue.h:
-
-/usr/include/qt6/QtQml/qqmlengine.h:

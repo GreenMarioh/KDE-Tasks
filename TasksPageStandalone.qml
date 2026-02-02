@@ -2,18 +2,17 @@ import QtQuick
 import QtQuick.Layouts
 import org.kde.plasma.components as PlasmaComponents
 import org.kde.kirigami as Kirigami
-import org.greenmarioh.kdetasks
+import "build/bin/org/greenmarioh/kdetasks" as TasksBackend
 
 Item {
     id: root
 
-    // Explicit sizes are required for the standalone viewer
     implicitWidth: Kirigami.Units.gridUnit * 25
     implicitHeight: Kirigami.Units.gridUnit * 30
 
     property bool showCompleted: true
 
-    TasksController {
+    TasksBackend.TasksController {
         id: tasksController
     }
 
@@ -203,7 +202,6 @@ Item {
                                 }
                             }
                         }
-                    }
                     }
 
                     Item {
